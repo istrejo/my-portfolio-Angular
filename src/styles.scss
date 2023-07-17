@@ -2,3 +2,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.writing {
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 18ch;
+
+  animation: typing 2s steps(var(--length)), blink .5s infinite step-end alternate;
+  overflow: hidden;
+
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@font-face {
+  font-family: 'burtons';
+  src: url('./assets/fonts/Burtons.otf');
+}
